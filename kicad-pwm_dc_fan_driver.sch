@@ -1,0 +1,247 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:kicad-pwm_dc_fan_driver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 4300 4300 0    60   Input ~ 0
+PWM_IN
+$Comp
+L 4N25 U?
+U 1 1 5B72F7ED
+P 5200 4400
+F 0 "U?" H 5000 4600 50  0000 L CNN
+F 1 "4N25" H 5200 4600 50  0000 L CNN
+F 2 "Housings_DIP:DIP-6_W7.62mm" H 5000 4200 50  0001 L CIN
+F 3 "" H 5200 4400 50  0001 L CNN
+	1    5200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B72F83C
+P 4600 4300
+F 0 "R?" V 4680 4300 50  0000 C CNN
+F 1 "220R" V 4600 4300 50  0000 C CNN
+F 2 "" V 4530 4300 50  0001 C CNN
+F 3 "" H 4600 4300 50  0001 C CNN
+	1    4600 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 5B72F887
+P 4900 5200
+F 0 "#PWR?" H 4900 4950 50  0001 C CNN
+F 1 "GNDD" H 4900 5075 50  0000 C CNN
+F 2 "" H 4900 5200 50  0001 C CNN
+F 3 "" H 4900 5200 50  0001 C CNN
+	1    4900 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5200 4900 4500
+Wire Wire Line
+	4900 4300 4750 4300
+Wire Wire Line
+	4450 4300 4300 4300
+$Comp
+L GNDPWR #PWR?
+U 1 1 5B72F8AE
+P 5600 5200
+F 0 "#PWR?" H 5600 5000 50  0001 C CNN
+F 1 "GNDPWR" H 5600 5070 50  0000 C CNN
+F 2 "" H 5600 5150 50  0001 C CNN
+F 3 "" H 5600 5150 50  0001 C CNN
+	1    5600 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5200 5600 4500
+Wire Wire Line
+	5600 4500 5500 4500
+$Comp
+L R R?
+U 1 1 5B72F90D
+P 5600 3950
+F 0 "R?" V 5680 3950 50  0000 C CNN
+F 1 "2k2" V 5600 3950 50  0000 C CNN
+F 2 "" V 5530 3950 50  0001 C CNN
+F 3 "" H 5600 3950 50  0001 C CNN
+	1    5600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5B72F936
+P 5600 3700
+F 0 "#PWR?" H 5600 3550 50  0001 C CNN
+F 1 "+12V" H 5600 3840 50  0000 C CNN
+F 2 "" H 5600 3700 50  0001 C CNN
+F 3 "" H 5600 3700 50  0001 C CNN
+	1    5600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3700 5600 3800
+Wire Wire Line
+	5600 4100 5600 4400
+Wire Wire Line
+	5600 4400 5500 4400
+$Comp
+L BC327 Q?
+U 1 1 5B72F971
+P 6750 4250
+F 0 "Q?" H 6950 4325 50  0000 L CNN
+F 1 "BC327" H 6950 4250 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 6950 4175 50  0001 L CIN
+F 3 "" H 6750 4250 50  0001 L CNN
+	1    6750 4250
+	1    0    0    1   
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5B72F9C4
+P 6850 3550
+F 0 "#PWR?" H 6850 3400 50  0001 C CNN
+F 1 "+12V" H 6850 3690 50  0000 C CNN
+F 2 "" H 6850 3550 50  0001 C CNN
+F 3 "" H 6850 3550 50  0001 C CNN
+	1    6850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B72FAD0
+P 6250 4250
+F 0 "R?" V 6330 4250 50  0000 C CNN
+F 1 "680R" V 6250 4250 50  0000 C CNN
+F 2 "" V 6180 4250 50  0001 C CNN
+F 3 "" H 6250 4250 50  0001 C CNN
+	1    6250 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 4250 6100 4250
+Connection ~ 5600 4250
+Wire Wire Line
+	6550 4250 6400 4250
+$Comp
+L Motor_DC M?
+U 1 1 5B72FB32
+P 6850 4750
+F 0 "M?" H 6950 4850 50  0000 L CNN
+F 1 "Motor_DC" H 6950 4550 50  0000 L TNN
+F 2 "" H 6850 4660 50  0001 C CNN
+F 3 "" H 6850 4660 50  0001 C CNN
+	1    6850 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR?
+U 1 1 5B72FB88
+P 6850 5200
+F 0 "#PWR?" H 6850 5000 50  0001 C CNN
+F 1 "GNDPWR" H 6850 5070 50  0000 C CNN
+F 2 "" H 6850 5150 50  0001 C CNN
+F 3 "" H 6850 5150 50  0001 C CNN
+	1    6850 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5050 6850 5200
+Wire Wire Line
+	6850 4050 6850 3550
+Wire Wire Line
+	6850 4450 6850 4550
+$Comp
+L D D?
+U 1 1 5B72FC19
+P 6550 4800
+F 0 "D?" H 6550 4900 50  0000 C CNN
+F 1 "1N4001" H 6550 4700 50  0000 C CNN
+F 2 "" H 6550 4800 50  0001 C CNN
+F 3 "" H 6550 4800 50  0001 C CNN
+	1    6550 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 4650 6550 4500
+Wire Wire Line
+	6550 4500 6850 4500
+Connection ~ 6850 4500
+Wire Wire Line
+	6550 4950 6550 5150
+Wire Wire Line
+	6550 5150 6850 5150
+Connection ~ 6850 5150
+$Comp
+L C_Small C?
+U 1 1 5B72FD97
+P 5950 4650
+F 0 "C?" H 5960 4720 50  0000 L CNN
+F 1 "390nF" H 5960 4570 50  0000 L CNN
+F 2 "" H 5950 4650 50  0001 C CNN
+F 3 "" H 5950 4650 50  0001 C CNN
+	1    5950 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4250 5950 4550
+Connection ~ 5950 4250
+$Comp
+L GNDPWR #PWR?
+U 1 1 5B72FE98
+P 5950 5200
+F 0 "#PWR?" H 5950 5000 50  0001 C CNN
+F 1 "GNDPWR" H 5950 5070 50  0000 C CNN
+F 2 "" H 5950 5150 50  0001 C CNN
+F 3 "" H 5950 5150 50  0001 C CNN
+	1    5950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5200 5950 4750
+$EndSCHEMATC
